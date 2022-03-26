@@ -1,0 +1,46 @@
+@import "../Variables//variables";
+
+.productSection {
+  @include containerStyle();
+  margin-top: 50px;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-family: $titleFont;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 0px;
+    }
+
+    .text {
+      font-family: $paragraphFont;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      color: #000000;
+      letter-spacing: 0.03em;
+      margin: 0px;
+      margin-bottom: 70px;
+    }
+  }
+
+  .productRow {
+    display: flex;
+    width: 100%;
+    gap: 60px 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section2 {
+    @extend .section;
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../Variables//variables";
+
+.card {
+  .image {
+    position: relative;
+    height: 230px;
+    width: 200px;
+  }
+
+  .productName {
+    font-family: $titleFont;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0px;
+    margin-top: 15px;
+  }
+
+  .price {
+    font-family: $paragraphFont;
+    margin: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+}

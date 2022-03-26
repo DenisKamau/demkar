@@ -1,0 +1,43 @@
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/pt-serif-caption";
+@import "@fontsource/pt-serif";
+@import "@fontsource/lato";
+
+// =========================
+//         COLORS
+// =========================
+$yellowColor: #ffcc00;
+$redColor: #e72627;
+$blackColor: #000000;
+$whiteColor: #ffffff;
+$greyColor: #6d7d8b;
+$offWhiteColor: #ffffffde;
+
+// =========================
+//         FONTS
+// =========================
+
+$h1Font: "pt-serif-caption";
+$titleFont: "Poppins";
+$textFont: "pt-serif";
+$paragraphFont: "Lato";
+
+// =========================
+//         MIXIN
+// =========================
+
+@mixin sectionStyle {
+  margin: 0px 20px;
+}
+
+@mixin containerStyle {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@mixin h1Style {
+  font-family: $h1Font;
+  font-style: normal;
+  font-weight: bold;
+  color: $whiteColor;
+}
