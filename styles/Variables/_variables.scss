@@ -13,6 +13,9 @@ $whiteColor: #ffffff;
 $greyColor: #6d7d8b;
 $offWhiteColor: #ffffffde;
 
+$primaryColor: #047a62;
+$secondaryColor: #e3ca05;
+
 // =========================
 //         FONTS
 // =========================
@@ -31,8 +34,7 @@ $paragraphFont: "Lato";
 }
 
 @mixin containerStyle {
-  max-width: 1300px;
-  margin: 0 auto;
+  margin: 0px 30px;
 }
 
 @mixin h1Style {

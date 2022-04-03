@@ -1,1 +1,159 @@
 @import "../Variables//variables";
+
+.footer {
+  padding: 30px 30px;
+  background: #000;
+  color: #fff;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 140px;
+
+  .footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .footerLeft {
+      max-width: 30%;
+
+      .shopDetails {
+        font-family: $paragraphFont;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+
+      .workingHours {
+        font-family: $titleFont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 30px 0px;
+      }
+
+      .socials {
+        p {
+          font-family: $titleFont;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 33px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+        }
+
+        .socialIcons {
+          display: flex;
+          gap: 25px;
+        }
+      }
+    }
+
+    .footerRight {
+      margin-right: 120px;
+      margin-top: 20px;
+      .getInTouch {
+        font-family: $titleFont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 33px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+
+      .line {
+        width: 70px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 15px;
+      }
+
+      .contactDetails {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        p {
+          letter-spacing: 0.03em;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    p {
+      font-family: $paragraphFont;
+      font-weight: 600;
+      font-size: 11px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      color: rgba(255, 255, 255, 0.81);
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 815px) and (max-aspect-ratio: 13/9) {
+  .footer {
+    padding: 30px 20px;
+    margin-top: 70px;
+
+    .footerTop {
+      flex-direction: column;
+      align-items: center;
+
+      .footerLeft {
+        max-width: 100%;
+        text-align: center;
+
+        .shopDetails {
+          font-size: 13px;
+        }
+
+        .workingHours {
+          font-size: 12px;
+          line-height: 25px;
+        }
+
+        .socials {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .footerRight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px !important;
+
+        .getInTouch {
+          text-align: center;
+          margin-top: 40px;
+          font-size: 13px;
+        }
+        .line {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

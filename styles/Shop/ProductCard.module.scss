@@ -5,12 +5,17 @@
     position: relative;
     height: 230px;
     width: 200px;
+    border-radius: 8px;
+
+    span {
+      border-radius: 8px;
+    }
   }
 
   .productName {
     font-family: $titleFont;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     color: #000000;
     margin: 0px;
@@ -22,7 +27,19 @@
     margin: 0px;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     color: #000000;
+    margin-top: 3px;
+    color: $secondaryColor;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 815px) and (max-aspect-ratio: 13/9) {
+  .card {
+    .image {
+      height: 140px;
+      width: 115px;
+    }
   }
 }

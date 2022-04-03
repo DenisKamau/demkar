@@ -3,24 +3,57 @@ import styles from "../../styles/Footer/Footer.module.scss";
 
 const Footer = () => {
   return (
-    <div>
-      <div className={styles.footerLeft}>
-        <Image src="/logo.png" alt="logo" width={30} height={30} />
-        <p>
-          Yeah Mom, we know, youve told us this story a million times. You felt sorry for him so you decided to go with him to The Fish Under The Sea
-          Dance.
-        </p>
-        <p>
-          WORKING DAYS/HOURS: <br />
-          Mon - Sat/ 7:00 AM - 6:00 PM
-        </p>
-        <div>
-          <p>Follow Us</p>
-          <div className={styles.socialIcons}></div>
+    <footer className={styles.footer}>
+      <div className={styles.footerTop}>
+        <div className={styles.footerLeft}>
+          <Image src="/logo.png" alt="logo" width={80} height={80} />
+          <p className={styles.shopDetails}>
+            Demkar Electricals is a leading elecricals distributor based in Nairobi, Kenya. We offer high quality products and services to our
+            customers.
+          </p>
+          <p className={styles.workingHours}>
+            WORKING DAYS/HOURS: <br />
+            Mon - Sat/ 7:00 AM - 6:00 PM
+          </p>
+          <div className={styles.socials}>
+            <p>Follow Us</p>
+            <div className={styles.line} />
+            <div className={styles.socialIcons}>
+              <Image src="/fb.png" alt="facebook" width={30} height={30} />
+              <Image src="/ig.png" alt="facebook" width={30} height={30} />
+              <Image src="/whatsapp.png" alt="facebook" width={30} height={30} />
+            </div>
+          </div>
+        </div>
+        <div className={styles.footerRight}>
+          <div className={styles.top}>
+            <p className={styles.getInTouch}>Get in touch</p>
+            <div className={styles.line} />
+            <div className={styles.bottom}>
+              <div className={styles.contactDetails}>
+                <Image src="/location.png" alt="location" width={20} height={20} />
+                <p style={{ lineHeight: "26px" }}>
+                  Kilimanjaro Mall, Charles Rubia Rd <br /> Shop No. 53 &57 ,Basement <br /> Next to Mololine Stage{" "}
+                </p>
+              </div>
+              <div className={styles.contactDetails}>
+                <Image src="/phone.png" alt="phone" width={20} height={20} />
+                <p style={{ lineHeight: "26px" }}>
+                  0724 235 594 <br /> 0722 771 226{" "}
+                </p>
+              </div>
+              <div className={styles.contactDetails}>
+                <Image src="/mail.png" alt="mail" width={20} height={20} />
+                <p>Demkerelectricals@gmail.com</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className={styles.footerRight}></div>
-    </div>
+      <div className={styles.footerBottom}>
+        <p>©Demkar Electricals Ltd. All Rights Reserved 2022</p>
+      </div>
+    </footer>
   );
 };
 

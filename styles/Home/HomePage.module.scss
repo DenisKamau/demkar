@@ -3,15 +3,22 @@
 .homepage {
   position: relative;
   height: 500px;
-  margin: 20px 20px;
 
   .headings {
     position: relative;
-    top: 50%;
+    top: 55%;
     display: flex;
     padding: 0px 60px;
     width: 100%;
     gap: 10px;
+
+    .heading1 {
+      margin-left: 30px;
+    }
+
+    .heading2 {
+      margin-left: 50px;
+    }
 
     div {
       width: 50%;
@@ -25,7 +32,7 @@
       }
 
       button {
-        background-color: $redColor;
+        background-color: $primaryColor;
         width: 120px;
         height: 40px;
         border: none;
@@ -34,15 +41,38 @@
         border-radius: 50px;
         font-weight: 600;
         letter-spacing: 0.03em;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+      }
+
+      button:hover {
+        background-color: $secondaryColor;
+        box-shadow: 0px 15px 20px rgba(5, 41, 27, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
       }
     }
   }
 }
 
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
 .categorySection {
   display: flex;
   margin-top: 40px;
-  @include sectionStyle();
+  @include containerStyle();
+  margin-top: 30px;
   gap: 20px;
 
   .categoryLeft {
@@ -52,6 +82,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 8px;
 
     .image {
       display: flex;
@@ -86,7 +117,7 @@
 
         .line {
           height: 2px;
-          width: 20px;
+          width: 23px;
           background-color: #000;
           margin: 0px;
         }
@@ -108,6 +139,7 @@
     background: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
     padding: 20px;
     justify-content: space-between;
+    border-radius: 8px;
 
     .image {
       margin: 0px !important;
@@ -159,6 +191,7 @@
       background: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
       width: 50%;
       justify-content: space-between;
+      border-radius: 8px;
 
       .image {
         margin: 0px !important;
@@ -204,9 +237,13 @@
       background: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
       width: 50%;
       justify-content: space-between;
+      border-radius: 8px;
 
       .image {
         margin: 0px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       div {
@@ -239,6 +276,41 @@
             margin: 0px;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 815px) and (max-aspect-ratio: 13/9) {
+  .categorySection {
+    flex-direction: column;
+    margin: 0px 20px;
+    margin-top: 50px;
+
+    .categoryLeft {
+      width: 100%;
+      height: fit-content;
+    }
+
+    .categoryRight {
+      width: 100%;
+      height: fit-content;
+    }
+
+    .top {
+      .image {
+        margin: 0px !important;
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+      .bottomLeft {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .bottomRight {
+        width: 100%;
       }
     }
   }

@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 
     .title {
       font-family: $titleFont;
@@ -42,5 +43,20 @@
   .section2 {
     @extend .section;
     margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 815px) and (max-aspect-ratio: 13/9) {
+  .productSection {
+    .title {
+      font-size: 22px;
+    }
+    .text {
+      font-size: 14px !important;
+      text-align: cente;
+    }
+    .productRow {
+      justify-content: center;
+    }
   }
 }
