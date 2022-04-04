@@ -18,9 +18,9 @@ const Footer = () => {
             <p>Follow Us</p>
             <div className={styles.line} />
             <div className={styles.socialIcons}>
-              <Image src="/fb.png" alt="facebook" width={30} height={30} />
-              <Image src="/ig.png" alt="facebook" width={30} height={30} />
-              <Image src="/whatsapp.png" alt="facebook" width={30} height={30} />
+              <Image src="/fb.png" alt="facebook" width={25} height={25} />
+              <Image src="/ig.png" alt="facebook" width={25} height={25} />
+              <Image src="/whatsapp.png" alt="facebook" width={25} height={25} />
             </div>
           </div>
         </div>

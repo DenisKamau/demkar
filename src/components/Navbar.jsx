@@ -37,7 +37,7 @@ const Navbar = ({ scroll }) => {
     <div className={!navbar ? styles.navbar : styles.navbar_active}>
       <div className={styles.navbarLeft}>
         <Link href="/" passHref>
-          <Image src="/logo.png" alt="" layout="fixed" width={60} height={60} priority />
+          <Image src="/logo.png" alt="" layout="fixed" width={40} height={40} priority />
         </Link>
         <p>DEMKER ELECTRICALS</p>
       </div>
