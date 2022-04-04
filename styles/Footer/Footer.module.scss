@@ -86,7 +86,8 @@
 
         p {
           letter-spacing: 0.03em;
-          font-size: 14px;
+          font-size: 16px;
+          line-height: 26px;
         }
       }
     }
@@ -112,11 +113,10 @@
 
     .footerTop {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
 
       .footerLeft {
         max-width: 100%;
-        text-align: center;
 
         .shopDetails {
           font-size: 13px;
@@ -128,10 +128,6 @@
         }
 
         .socials {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
           p {
             font-size: 13px;
           }
@@ -146,12 +142,8 @@
         margin-right: 0px !important;
 
         .getInTouch {
-          text-align: center;
           margin-top: 40px;
           font-size: 13px;
-        }
-        .line {
-          margin: 0 auto;
         }
       }
     }

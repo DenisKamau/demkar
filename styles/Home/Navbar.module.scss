@@ -5,11 +5,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 20px 30px;
   position: fixed;
   z-index: 1000;
   width: 100%;
   transition: all ease-in-out 300ms;
+  top: 0px;
+  background-color: #000000;
+
+  .mobileNav {
+    display: none;
+  }
 
   .navbarLeft {
     display: flex;
@@ -37,6 +43,14 @@
         gap: 20px;
 
         li {
+          transition: all ease-in-out 300ms;
+        }
+
+        li:hover {
+          transform: translateY(-5px);
+        }
+
+        li a {
           color: #fff;
           font-family: $titleFont;
           text-transform: uppercase;
@@ -48,35 +62,8 @@
 
           &:hover {
             color: $secondaryColor;
-            transform: translateY(-5px);
           }
         }
-      }
-    }
-
-    .search {
-      position: relative;
-      .searchIcon span {
-        position: absolute !important;
-        left: 10px;
-        top: 13px;
-      }
-    }
-
-    .searchInput {
-      width: 330px;
-      height: 50px;
-      border-radius: 50px;
-      padding: 8px 12px;
-      outline: none !important;
-      font-family: $titleFont;
-      font-size: 15px;
-      padding-left: 40px;
-      border: 4px solid transparent;
-      transition: all ease-in-out 300ms;
-
-      &:focus {
-        border: 4px solid $secondaryColor;
       }
     }
   }
@@ -97,15 +84,28 @@
     padding: 10px 20px;
     background-color: #fff;
     z-index: 2000;
-    list-style: none;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 28px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      padding-left: 0px;
+      margin: 0px;
+      margin-bottom: 20px;
+    }
 
     li {
       margin: 12px 0px;
       font-family: $titleFont, sans-serif;
       letter-spacing: 0.03em;
       text-align: center;
+    }
+
+    .search {
+      margin: 0 auto;
     }
   }
   .menuIcon {
@@ -171,6 +171,32 @@
     top: 0;
   }
 }
+
+.search {
+  position: relative;
+  .searchIcon span {
+    position: absolute !important;
+    left: 10px;
+    top: 13px;
+  }
+}
+
+.searchInput {
+  width: 330px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 8px 12px;
+  outline: none !important;
+  font-family: $titleFont;
+  font-size: 15px;
+  padding-left: 40px;
+  border: 4px solid transparent;
+  transition: all ease-in-out 300ms;
+
+  &:focus {
+    border: 4px solid $secondaryColor;
+  }
+}
 // Landscape here:
 @media only screen and (min-width: 320px) and (max-width: 815px) and (min-aspect-ratio: 13/9) {
 }
@@ -181,12 +207,24 @@
     padding: 10px 20px;
     width: 100vw;
     background-color: #000;
+    top: 0 !important;
+
+    .mobileNav {
+      display: block;
+    }
+
+    .deskNav {
+      display: none;
+    }
 
     .navbarLeft {
       p {
-        font-size: 15px;
-        margin-left: 3px;
+        display: none;
       }
+    }
+
+    .searchInput {
+      border: 4px solid #000;
     }
   }
 }

@@ -1,11 +1,20 @@
 @import "../Variables//variables";
 
 .card {
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+
+  &:hover {
+    .image {
+      transform: translateY(-10px);
+    }
+  }
   .image {
     position: relative;
     height: 230px;
     width: 200px;
     border-radius: 8px;
+    transition: all ease-in-out 250ms;
 
     span {
       border-radius: 8px;

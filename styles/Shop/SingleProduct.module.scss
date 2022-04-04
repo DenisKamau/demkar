@@ -1,0 +1,76 @@
+@import "../Variables//variables";
+
+.singleProduct {
+  padding: 0px 20px;
+
+  .image {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  h1 {
+    font-family: $titleFont;
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 35px;
+  }
+
+  .price {
+    color: $secondaryColor;
+    margin: 0px;
+    font-family: $paragraphFont;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+  }
+  .about {
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+    p {
+      margin: 0px;
+      font-family: $paragraphFont;
+      font-size: 17px;
+      letter-spacing: 0.03em;
+      line-height: 26px;
+      margin-bottom: 50px;
+    }
+  }
+  .callButton {
+    height: 50px;
+    padding: 7px 12px;
+    font-family: $titleFont;
+    color: #fff;
+    background-color: $primaryColor;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  .relatedProducts {
+    h3 {
+      font-family: $titleFont;
+      font-size: 20px;
+      margin: 0px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+    gap: 30px;
+  }
+  .embla__slide {
+    position: relative;
+    flex: 0 0 100%;
+  }
+}

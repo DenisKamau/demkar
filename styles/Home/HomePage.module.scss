@@ -3,6 +3,11 @@
 .homepage {
   position: relative;
   height: 500px;
+  margin-top: -10px;
+
+  .mobileHero {
+    display: none;
+  }
 
   .headings {
     position: relative;
@@ -282,6 +287,27 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 815px) and (max-aspect-ratio: 13/9) {
+  .background {
+    display: none !important;
+  }
+
+  .mobileHero {
+    display: block !important;
+  }
+
+  .headings {
+    display: none !important;
+  }
+
+  .homepage {
+    margin: 0px;
+    background: #d3cce3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e9e4f0, #d3cce3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: fit-content;
+    margin-top: -10px;
+  }
+
   .categorySection {
     flex-direction: column;
     margin: 0px 20px;
@@ -290,6 +316,8 @@
     .categoryLeft {
       width: 100%;
       height: fit-content;
+      flex-direction: row;
+      gap: 20px;
     }
 
     .categoryRight {
@@ -308,9 +336,12 @@
       .bottomLeft {
         width: 100%;
         margin-top: 20px;
+        flex-direction: row;
+        gap: 20px;
       }
       .bottomRight {
         width: 100%;
+        flex-direction: row-reverse;
       }
     }
   }

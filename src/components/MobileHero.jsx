@@ -1,11 +1,14 @@
-import Image from "next/image";
+import Link from "next/link";
 import styles from "../../styles/Home/MobileHero.module.scss";
 
 const MobileHero = () => {
   return (
     <div className={styles.mobileHero}>
-      <Image src="/5.jpg" alt="" layout="fill" priority objectFit="cover" />
-      {/* <button>Shop Now</button> */}
+      <h1>Demker Electricals</h1>
+      <p> We are a leading elecricals dealer in electical goods & appliances, hardware & general merchants</p>
+      <Link href="/shop" passHref>
+        <button>Shop Now</button>
+      </Link>
     </div>
   );
 };

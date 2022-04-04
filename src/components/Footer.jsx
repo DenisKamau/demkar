@@ -8,8 +8,7 @@ const Footer = () => {
         <div className={styles.footerLeft}>
           <Image src="/logo.png" alt="logo" width={80} height={80} />
           <p className={styles.shopDetails}>
-            Demkar Electricals is a leading elecricals distributor based in Nairobi, Kenya. We offer high quality products and services to our
-            customers.
+            Demker Electricals is a leading elecricals dealer in electical goods & appliances, hardware & general merchants
           </p>
           <p className={styles.workingHours}>
             WORKING DAYS/HOURS: <br />
@@ -51,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>©Demkar Electricals Ltd. All Rights Reserved 2022</p>
+        <p>©Demker Electricals Ltd. All Rights Reserved 2022</p>
       </div>
     </footer>
   );
