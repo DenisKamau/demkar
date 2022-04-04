@@ -11,19 +11,26 @@ const SingleProduct = ({ img }) => {
 
   return (
     <div className={styles.singleProduct}>
-      <div className={styles.image}>
-        <Image src="/20.jpg" alt="" layout="fill" objectFit="cover" priority />
+      <div className={styles.top}>
+        <div className={styles.left}>
+          <div className={styles.image}>
+            <Image src="/20.jpg" alt="" layout="fill" objectFit="cover" priority />
+          </div>
+        </div>
+        <div className={styles.right}>
+          <h1>Product Name</h1>
+          <p className={styles.price}>Kshs 200.00</p>
+          <div className={styles.about}>
+            <h2>Description</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nibh
+              praesent tristique magna sit amet purus.
+            </p>
+          </div>
+          <button className={styles.callButton}>Call to Order</button>
+        </div>
       </div>
-      <h1>Product Name</h1>
-      <p className={styles.price}>Kshs 200.00</p>
-      <div className={styles.about}>
-        <h2>Description</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nibh
-          praesent tristique magna sit amet purus.
-        </p>
-      </div>
-      <button className={styles.callButton}>Call to Order</button>
+
       <div className={styles.relatedProducts}>
         <h3>Related Products</h3>
         <div>

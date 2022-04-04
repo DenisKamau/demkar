@@ -74,3 +74,28 @@
     flex: 0 0 100%;
   }
 }
+
+@media only screen and (min-width: 990px) {
+  .singleProduct {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+
+    .top {
+      display: flex;
+      margin-bottom: 60px;
+      gap: 40px;
+
+      .left {
+        .image {
+          height: 500px;
+          width: 500px;
+        }
+      }
+
+      .right {
+        margin-top: 60px;
+      }
+    }
+  }
+}
